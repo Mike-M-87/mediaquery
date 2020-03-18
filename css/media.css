@@ -1,10 +1,89 @@
+.relative {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 4px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.absolute {
+    /* position: absolute; */
+    top: 80px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+    color: blue;
+}
+.image img {
+    width:50vw;
+    height: 50vh;
+    opacity: 0.4;
+}
+.image img:hover{ 
+  background:
+}
 .column {
     text-align: right;
     background-color: yellow;
     font-size: 30px;    
 }
-
-
+.column p:hover{
+    background-color:red;
+}
+#links a:hover {
+    color: lime;
+}
+#links a:active {
+    color: red;
+}
+a:visited {
+    color:yellow;
+}
+a:link {
+    color:green ;
+}
+.paragraph::first-line {
+    color: green;
+}
+.paragraph::first-letter {
+    color: red;
+    text-transform: uppercase;
+}
+.paragraph::before {
+    content: url("car2.ico")
+}
+.paragraph::after {
+    content: url("car2.ico");
+}
+.paragraph::selection {
+    color: red;
+    background-color: yellow;
+}
+#gradient {
+    background-image: linear-gradient(to top,rgba(37, 88, 165, 0.568), rgba(0, 255, 0, 0.363), rgba(255, 0, 0, 0.329)), url("../image/nature.jpg") ;
+    height: 20%;
+    width: 60%;
+    box-shadow: 0 0 90px rgba(173, 32, 32, 0.342) ;
+}
+.tooltip:hover .text {
+    display: inline-block;
+} 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .text {
+    display: none;
+    width: 100px;
+    background-color: #000;
+    color: rgb(143, 135, 135);
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+/* 
 
 @media screen and (max-width:500px) {
     .column {
@@ -23,16 +102,21 @@
     }
 }
 
-@media screen and (min-width:300px) {
+@media screen and (max-width: 500px) {
     #image img {
-        width: 200px;
+        width: 100vw;
         height: 100px;
+        
+    }
+    body {
+        margin: 0;
+        width: 100vw;
     }
 }
 @media screen and (max-width: 1920px) {
     #image img {
-        width: 900px;
-        height: 400px;
+        width: 80vw;
+        height: 70vh;
     } 
-}
+} */
 
